@@ -1,1 +1,37 @@
 @import "tailwindcss";
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/plus-jakarta-sans';
+
+:root {
+
+    /* Light Mode */
+    --color-primary: #6366F1;
+    --color-primary-dark: #4F46E5;
+    --color-primary-light: #EEF2FF;
+    --color-bg-main: #F8FAFC;
+    --color-bg-card: #FFFFFF;
+    --color-text-primary: #0F172A;
+    --color-text-secondary: #475569;
+    --color-border: #E2E8F0;
+    --color-success: #10B981;
+    --color-warning: #F59E0B;
+    --color-error: #EF4444;
+
+    /* Dark Mode */
+    --color-dark-primary: #818CF8;
+    --color-dark-primary-dark: #6366F1;
+    --color-dark-primary-bg: #312E81;
+    --color-dark-bg-main: #0F172A;
+    --color-dark-bg-card: #1E293B;
+    --color-dark-text-primary: #F1F5F9;
+    --color-dark-text-secondary: #CBD5E1;
+    --color-dark-border: #334155;
+    --color-dark-success: #34D399;
+    --color-dark-warning: #FBBF24;
+    --color-dark-error: #F87171;
+
+    /* Typography */
+    --font-primary: 'Inter Variable', sans-serif;
+    --font-secondary: 'Plus Jakarta Sans Variable', sans-serif;
+
+}
