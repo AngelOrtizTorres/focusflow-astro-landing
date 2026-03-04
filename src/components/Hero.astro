@@ -1,3 +1,8 @@
+---
+import Picture from 'astro/components/Picture.astro';
+import images from '../assets/images.ts';
+---
+
 <section class="flex w-full mt-10 items-center">
     <div class="px-8 py-16 flex flex-col items-center gap-8 text-center w-1/2">
         <h2 class="text-5xl">“Mejora tu productividad un 40% con IA”</h2>
@@ -7,5 +12,20 @@
             <button class="border-4 border-[var(--color-border)] cursor-pointer text-2xl text-[var(--color-text-primary)] px-16 py-3 rounded-[50px]" aria-label="Ver demostración">VER DEMO</button>
         </div>
     </div>
-    <img src="/src/assets/Designer.png" alt="Dashboard de FocusFlow" class="w-[40%] mx-10" />
+    <Picture
+            loading="lazy"
+            src={images.dashboard}
+            alt="Dashboard FocusFlow"
+            width={1000}
+            height={800}
+            widths={[700, 900, 1200, 1600, 2000]}
+            sizes={`
+            (max-width: 768px) 500px,
+            (max-width: 1024px) 900px,
+            (max-width: 1280px) 1400px,
+            (max-width: 1920px) 1800px,
+            `}
+            formats={["avif", "webp"]}
+            class=""
+        />
 </section>

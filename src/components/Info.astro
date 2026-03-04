@@ -1,0 +1,29 @@
+---
+import Picture from 'astro/components/Picture.astro';
+import images from '../assets/images.ts';
+---
+
+<section class="mt-30 flex items-center justify-center gap-20">
+    <Picture
+        loading="lazy"
+        src={images.dashboard}
+        alt="Dashboard FocusFlow"
+        width={1000}
+        height={800}
+        widths={[700, 900, 1200, 1600, 2000]}
+        sizes={`
+        (max-width: 768px) 500px,
+        (max-width: 1024px) 900px,
+        (max-width: 1280px) 1400px,
+        (max-width: 1920px) 1800px,
+        `}
+        formats={["avif", "webp"]}
+        class="w-[80%] ml-70"
+    />
+    <div class="flex flex-col justify-center ml-[-300px] items-center">
+        <h2 class="text-4xl text-center mb-3">¿Cómo funciona?</h2>
+        <p class="text-center text-2xl w-[40%] mt-5">Nuestro servicio funciona por suscripción: te registras, eliges el plan que mejor se adapta (gratuito, profesional o equipo) y accedes a un panel centralizado donde creas proyectos y tareas. La IA integrada sugiere prioridades, agrupa tareas relacionadas y propone automatizaciones para reducir trabajo repetitivo.</p>
+        <p class="text-center text-2xl w-[40%] mt-5">FocusFlow se integra con calendarios, Slack y repositorios para sincronizar tu trabajo; la gestión de equipos, roles y facturación (mensual/anual) está incluida. Tus datos se cifran, se hacen copias de seguridad automáticas y puedes escalar según tus necesidades.</p>
+    
+    </div>
+</section>

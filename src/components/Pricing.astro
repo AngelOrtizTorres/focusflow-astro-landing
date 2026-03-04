@@ -1,0 +1,11 @@
+---
+import PrincingCard from './PrincingCard.astro';
+---
+
+<section class="bg-[var(--color-bg-card)] mt-30 flex items-center justify-center">
+    <div class="flex flex-col md:flex-row gap-10 mt-8">
+        <PrincingCard plan="Free" price="0€" includes={["5 proyectos", "IA limitada"]} />
+        <PrincingCard plan="Pro" price="9€/mes" includes={["IA ilimitada", "Dashboard avanzado"]} recommended={true} />
+        <PrincingCard plan="Team" price="19€/mes" includes={["Colaboración", "Gestión de equipo"]} />
+    </div>
+</section>
