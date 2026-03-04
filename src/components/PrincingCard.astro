@@ -1,0 +1,36 @@
+---
+export interface Props {
+	plan?: string;
+	price?: string;
+	includes?: string | string[];
+	recommended?: boolean;
+}
+
+const { plan, price, includes, recommended = false } = Astro.props;
+---
+<div class="pt-20 pb-30">
+    <div class="relative">
+        {recommended && (
+            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[var(--color-primary)] text-white text-sm px-3 py-1 rounded-full font-medium">Recomendado</div>
+        )}
+    
+        <article class={
+            `w-[300px] rounded-lg p-6 bg-black/85 shadow ${recommended ? 'border-4 border-[var(--color-primary)]' : 'border'}`
+        }>
+            <header class="mb-4">
+                <h3 class="text-2xl text-white font-semibold">{plan}</h3>
+                <p class="text-lg text-[var(--color-text-secondary)]">{price}</p>
+            </header>
+    
+            <ul class="mb-4 list-disc pl-5 text-gray-700 dark:text-gray-300">
+                {Array.isArray(includes)
+                    ? includes.map(item => <li>{item}</li>)
+                    : <li>{includes}</li>}
+            </ul>
+    
+            <footer>
+                <button class="w-full bg-[var(--color-primary)] text-white py-2 rounded-md">Seleccionar</button>
+            </footer>
+        </article>
+    </div>
+</div>
