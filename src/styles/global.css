@@ -10,11 +10,11 @@
     --color-primary: light-dark(#6366F1, #818CF8);
     --color-primary-dark: light-dark(#4F46E5, #6366F1);
     --color-primary-light: light-dark(#EEF2FF, #312E81);
-    --color-bg-main: light-dark(#F8FAFC, #0F172A);
-    --color-bg-card: light-dark(#FFFFFF, #1E293B);
+    --color-bg-main: light-dark(#e9ebee, #0F172A);
+    --color-bg-card: light-dark(#FFFFFF, #27344b);
     --color-text-primary: light-dark(#0F172A, #F1F5F9);
     --color-text-secondary: light-dark(#475569, #CBD5E1);
-    --color-border: light-dark(#E2E8F0, #334155);
+    --color-border: light-dark(#b5beca, #334155);
     --color-success: light-dark(#10B981, #34D399);
     --color-warning: light-dark(#F59E0B, #FBBF24);
     --color-error: light-dark(#EF4444, #F87171);
